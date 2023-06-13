@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/web/WEB-INF/views/video/anime-watching.jsp</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/controllers/VideoController.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/entity/FeedBackEntity.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/service/FilmService.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/service/VideoService.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/web/WEB-INF/views/video/anime.jsp</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/repository/VideoRepository.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/entity/CategoryEntity.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/web/WEB-INF/views/video/anime-detail.jsp</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/service/CategoryService.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/repository/FilmRepository.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/web/WEB-INF/layouts/main.jsp</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/entity/VideoEntity.java</file>
+            <file>file:/D:/FPTU2022_2025/Hobby/AnimeWeb/anime-website/src/java/repository/CategoryRepository.java</file>
+        </group>
+    </open-files>
+</project-private>
