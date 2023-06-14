@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="anime__details__btn">
-                            <a href="<c:url value="/video/anime-watching.do?id=${detail.id}" />" class="watch-btn"><span>Watch Now</span> <i
+                            <a href="<c:url value="/video/anime-watching.do?fid=${detail.fid}" />" class="watch-btn"><span>Watch Now</span> <i
                                     class="fa fa-angle-right"></i></a>
                         </div>
                     </div>

@@ -30,7 +30,7 @@ public class FilmRepository {
         }
         while(rs.next()) {
             FilmEntity entity = new FilmEntity();
-            entity.setId(rs.getInt(1));
+            entity.setFid(rs.getInt(1));
             entity.setName(rs.getString(2));
             entity.setDescription(rs.getString(3));
             entity.setThumbnailurl(rs.getString(4));
@@ -51,7 +51,7 @@ public class FilmRepository {
         }
         while(rs.next()) {
             FilmEntity entity = new FilmEntity();
-            entity.setId(rs.getInt(1));
+            entity.setFid(rs.getInt(1));
             entity.setName(rs.getString(2));
             entity.setDescription(rs.getString(3));
             entity.setThumbnailurl(rs.getString(4));
@@ -72,7 +72,7 @@ public class FilmRepository {
         }
         while(rs.next()) {
             FilmEntity entity = new FilmEntity();
-            entity.setId(rs.getInt(1));
+            entity.setFid(rs.getInt(1));
             entity.setName(rs.getString(2));
             entity.setDescription(rs.getString(3));
             entity.setThumbnailurl(rs.getString(4));
@@ -89,7 +89,7 @@ public class FilmRepository {
         pstm.setInt(1, id);
         ResultSet rs = pstm.executeQuery();
         if (rs.next()) {
-            film.setId(rs.getInt("id"));
+            film.setFid(rs.getInt("id"));
             film.setName(rs.getString("name"));
             film.setDescription(rs.getString("description"));
             film.setThumbnailurl(rs.getString("thumbnailurl"));

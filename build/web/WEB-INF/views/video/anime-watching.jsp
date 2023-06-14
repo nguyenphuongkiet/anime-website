@@ -40,7 +40,7 @@
                         <h5>${video.name}</h5>
                     </div>
                     <c:forEach var="v" items="${requestScope.list}">
-                        <a href="<c:url value="/video/anime-watching.do?id=${v.filmId}&episodeId=${v.id}" />">Ep ${v.ep}</a>
+                        <a href="<c:url value="/video/anime-watching.do?fid=${v.filmId}&episodeId=${v.ep}" />">Ep ${v.ep}</a>
                     </c:forEach>
                 </div>
             </div>

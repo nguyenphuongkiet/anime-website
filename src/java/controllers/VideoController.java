@@ -67,7 +67,7 @@ public class VideoController extends HttpServlet {
                     break;
                 }
                 case "anime-watching": {
-                    int id = Integer.parseInt(request.getParameter("id"));
+                    int id = Integer.parseInt(request.getParameter("fid"));
                     ArrayList<VideoEntity> fullList = vs.getVideoByFilmId(id); // store the full list of videos
                     VideoEntity ve = vs.getVideo(id);
                     request.setAttribute("video", ve);
@@ -78,7 +78,7 @@ public class VideoController extends HttpServlet {
                         // extract the ID of the selected episode
                         int episodeId = Integer.parseInt(episodeIdParam);
                         // get details for the selected episode
-                        ve = vs.getVideo(episodeId);
+                        ve = vs.getVideoByFilmIdAndEpisode(id, episodeId);
                         request.setAttribute("video", ve);
                     }
 

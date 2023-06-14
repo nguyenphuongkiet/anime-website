@@ -18,7 +18,7 @@ public class VideoRepository {
     public VideoEntity getVideo(int id) throws SQLException {
         VideoEntity entity = new VideoEntity();
         Connection con = DBConfig.getConnection();
-        PreparedStatement pstm = con.prepareStatement("select * from video where id = ?");
+        PreparedStatement pstm = con.prepareStatement("select * from video where filmid = ?");
         pstm.setInt(1, id);
         ResultSet rs = pstm.executeQuery();
         if (rs.next()) {
@@ -66,11 +66,41 @@ public class VideoRepository {
         return episodeList;
     }
 
+    public VideoEntity getVideoByFilmIdAndEpisode(int filmId, int episodeId) throws SQLException {
+        VideoEntity video = new VideoEntity();
+        // Prepare the SQL query
+        String sql = "SELECT * FROM video WHERE FilmID = ? and ep = ?";
+        Connection con = DBConfig.getConnection();
+        PreparedStatement statement = con.prepareStatement(sql);
+
+        // Set the anime ID parameter
+        statement.setInt(1, filmId);
+        statement.setInt(2, episodeId);
+
+        // Execute the query and retrieve the result set
+        ResultSet resultSet = statement.executeQuery();
+
+        while (resultSet.next()) {
+
+            video.setFilmId(resultSet.getInt("ID"));
+            video.setName(resultSet.getString("Name"));
+            video.setThumbnailUrl(resultSet.getString("ThumbnailURL"));
+            video.setVideoUrl(resultSet.getString("VideoURL"));
+            video.setReleaseDate(resultSet.getDate("ReleaseDate"));
+            video.setLength(resultSet.getInt("Length"));
+            video.setView(resultSet.getInt("View"));
+            video.setFilmId(resultSet.getInt("FilmID"));
+            video.setEp(resultSet.getInt("Ep"));
+
+        }
+        return video;
+    }
+
     public static void main(String[] args) throws SQLException {
         VideoRepository repo = new VideoRepository();
+        VideoEntity ve = new VideoEntity();
+        ve = repo.getVideoByFilmIdAndEpisode(13, 2);
 
-        for(VideoEntity e : repo.getVideoByFilmId(1)){
-            System.out.println(e);
-        }
+        System.out.println(ve);
     }
 }

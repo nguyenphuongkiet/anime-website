@@ -23,4 +23,8 @@ public class VideoService {
     public ArrayList<VideoEntity> getVideoByFilmId(int id) throws SQLException{
         return vr.getVideoByFilmId(id);
     }
+    
+    public VideoEntity getVideoByFilmIdAndEpisode(int id, int ep) throws SQLException{
+        return vr.getVideoByFilmIdAndEpisode(id, ep);
+    }
 }

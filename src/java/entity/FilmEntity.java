@@ -9,7 +9,7 @@ package entity;
  * @author admin
  */
 public class FilmEntity {
-    private int id;
+    private int fid;
     private String name;
     private String description;
     private String thumbnailurl;
@@ -17,19 +17,19 @@ public class FilmEntity {
     public FilmEntity() {
     }
 
-    public FilmEntity(int id, String name, String description, String thumbnailurl) {
-        this.id = id;
+    public FilmEntity(int fid, String name, String description, String thumbnailurl) {
+        this.fid = fid;
         this.name = name;
         this.description = description;
         this.thumbnailurl = thumbnailurl;
     }
 
-    public int getId() {
-        return id;
+    public int getFid() {
+        return fid;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setFid(int fid) {
+        this.fid = fid;
     }
 
     public String getName() {
@@ -58,6 +58,6 @@ public class FilmEntity {
 
     @Override
     public String toString() {
-        return "FilmEntity{" + "id=" + id + ", name=" + name + ", description=" + description + ", thumbnailurl=" + thumbnailurl + '}';
+        return "FilmEntity{" + "fid=" + fid + ", name=" + name + ", description=" + description + ", thumbnailurl=" + thumbnailurl + '}';
     }
 }
